@@ -1,17 +1,23 @@
-[![EFI release](https://img.shields.io/badge/EFI-May_28,_2024-informational.svg)](https://github.com/rowell1/GPD-WIN-Max-2020-Hackintosh/tree/OpenCore)
-[![OpenCore version](https://img.shields.io/badge/OpenCore-0.9.9-silver.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![EFI release](https://img.shields.io/badge/EFI-May_31,_2024-informational.svg)](https://github.com/rowell1/GPD-WIN-Max-2020-Hackintosh/tree/OpenCore)
+[![OpenCore version](https://img.shields.io/badge/OpenCore-1.0.0-silver.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![MacOS version](https://img.shields.io/badge/BigSur-11.7.10-deeppink.svg)](https://www.apple.com/macos)
-[![MacOS version](https://img.shields.io/badge/Monterey-12.7.4-violet.svg)](https://www.apple.com/macos)
-[![MacOS version](https://img.shields.io/badge/Ventura-13.6.6-orange.svg)](https://www.apple.com/macos)
-[![MacOS version](https://img.shields.io/badge/Sonoma-14.4.1-success.svg)](https://www.apple.com/macos)  
+[![MacOS version](https://img.shields.io/badge/Monterey-12.7.5-violet.svg)](https://www.apple.com/macos)
+[![MacOS version](https://img.shields.io/badge/Ventura-13.6.7-orange.svg)](https://www.apple.com/macos)
+[![MacOS version](https://img.shields.io/badge/Sonoma-14.5-success.svg)](https://www.apple.com/macos)  
 
 
 # GPD-WIN-Max-2020-Hackintosh [WIP]
 
-OpenCore EFI folder for **GPD WIN Max 2020** (i5-1035G7 BIOS 1.16) now supports up to **macOS 14.4.1 Sonoma**  
+OpenCore EFI folder for **GPD WIN Max 2020** (i5-1035G7 BIOS 1.16) now supports up to **macOS 14.5 Sonoma**  
 
-With **OCAuxiliaryTools** I updated [_b00t0x/GPD-WIN-Max-Hackintosh (Aug 9, 2023)_](https://github.com/b00t0x/GPD-WIN-Max-Hackintosh) to **OpenCore 0.9.9**  
+With **OCAuxiliaryTools** I updated [_b00t0x/GPD-WIN-Max-Hackintosh (Aug 9, 2023)_](https://github.com/b00t0x/GPD-WIN-Max-Hackintosh) to **OpenCore 1.0.0**  
 Added some Kexts and selected SMBIOS **MacBookAir9,1** (maximum OS = Current)  
+
+### _Disclaimer: This repository under construction is for testing only ._  
+_I hope to inspire other enthusiasts to extensively test my EFI folder ._  
+_Since I don't own a WIN Max 2020, testing it on my multiboot P2 Max 2019 yielded the following results :_  
+<img width="796" alt="WM20H" src="https://github.com/rowell1/GPD-WIN-Max-2020-Hackintosh/assets/156696883/16a0e591-e087-442a-a707-e0c10ffd5e48">  
+
 
 ## What’s included
 ............................................................. release ........ comment .......................... MinKernel .... MaxKernel  
@@ -46,17 +52,41 @@ Added some Kexts and selected SMBIOS **MacBookAir9,1** (maximum OS = Current)
 • VoltageShift.kext .............................. 1.24  
 
 
+
+## What works  
+• iGPU acceleration  
+• Built-in sound  
+• Keyboard  
+...... Hotkeys for brightness/volume adjustment  
+• Trackpad  
+• Touchpanel  
+• Gamepad  
+...... mouse mode  
+...... Pad mode ( requires 360Controller )  
+• Wired LAN  
+• Wireless LAN  
+• ThunderBolt 3 video output  
+...... USB-C to DP 4K/60Hz  
+...... USB-C to HDMI 4K/60Hz  
+• Battery level display  
+...... recommended to use _coconutBattery_ as there is approx. 5% difference in remaining battery capacity.  
+• Sleep/Wake  
+
+## What doesn't work  
+• Audio output via ThunderBolt 4 port  
+• HDMI video/audio output  
+
+
 # Notes
 ### _Disclaimer: This repository under construction is for testing only._  
-_Since I don't own a GPD WIN Max 2020, I hope to inspire other enthusiasts to test this up-to-date EFI build ._  
 _The experience I learned building [_rowell1/GPD-P2-Max-2019-Hackintosh_](https://github.com/rowell1/GPD-P2-Max-2019-Hackintosh) became the reference for this project ._  
-
-<img width="796" alt="P2M19H" src="https://github.com/rowell1/GPD-WIN-Max-2020-Hackintosh/assets/156696883/b057256f-ae99-4d55-8726-de87d16e1679">
 
 
 _________________________________________________________________________________________________
 _<sup>1</sup> https://openintelwireless.github.io/IntelBluetoothFirmware/FAQ.html#what-additional-steps-should-i-do-to-make-bluetooth-work-on-macos-monterey-and-newer_  
 _<sup>2</sup> https://github.com/OpenIntelWireless/itlwm/releases_  
-_<sup>3</sup> https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md_  
+_<sup>3</sup> https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md_   
+_<sup>4</sup> https://osxlatitude.com/forums/topic/18095-how-do-i-grab-my-screens-edid-information/_
+
 
 
